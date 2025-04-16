@@ -22,3 +22,21 @@ The `select` function can take 2 different kinds of arguments. In the example ab
 - `@r` - Random player
 - `@s` - Current entity
 > Note: The `@initiator` selector does not do anything as Pyrite generates function files, not NPCs
+
+The other type of selector uses JSON. It's format look like this:
+```
+{
+    "selector": "@e"
+    "type": "zombie",
+    "hasitem": {
+        "item": "netherite_sword",
+        "location": "slot.weapon.mainhand"
+    },
+    "name": "Ultra Zombie"
+}
+```
+Let's break that down.
+- `selector` means the selector (as mentioned above)
+- `type` means the type of the entity i. e. `"zombie"`
+- `hasitem` means the itemdata that the entity needs to have (more info on the [Bedrock Wiki](https://wiki.bedrock.dev/commands/selectors))
+- `name` means the name of the entity i. e "Ultra Zombie"
