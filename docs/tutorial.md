@@ -66,3 +66,14 @@ say("from the root entity")
 select(@e).say("from a referenced entity")
 ```
 In fact, `select` is also a command. Select can be run on a referenced entity as well as on the root entity.
+```
+// select closest player
+select(@p)
+// select closest entity to the closest player that is not the player
+.select({
+    "selector": "@e",
+    "c": 1,
+    "rm": 0.01
+})
+```
+As you can see in the example above, we get the closest player, and get the entity closest to that player with a select command.
