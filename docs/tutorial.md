@@ -59,3 +59,10 @@ select({
 ## Understanding
 
 Now you want to understand the commands system in Pyrite. In Pyrite, the term 'command' refers to what you would call functions in JavaScript or C++. Commands need an entity to run on, and uses the `.` operator. In the previous examples, the format `entity.say()` was used.
+
+Another thing to understand, which is probably one of the most important things, is the root entity. In Pyrite, the root entity refers to the entity that ran the function command. If a command does not have an entity referenced in the code, then it automatically references the root entity.
+```
+say("from the root entity")
+select(@e).say("from a referenced entity")
+```
+In fact, `select` is also a command. Select can be run on a referenced entity as well as on the root entity.
