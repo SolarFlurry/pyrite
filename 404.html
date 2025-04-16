@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page not found | Pyrite</title>
+    <link rel="icon" href="logo.png"/>
+    <meta charset="UTF-8"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="/css/main.css"/>
+</head>
+<body>
+    <ul id="navbar">
+        <li class="navlink"><a>Home</a></li>
+        <li class="navbreak" style="width:45%;"></li>
+        <button id="search">
+            <span>search</span>
+        </button>
+        <li class="navbreak" style="width:5%"></li>
+        <li class="navlink"><a href="/download/">Download</a></li>
+        <li class="navlink"><a href="/docs/tutorial/">Getting Started</a></li>
+    </ul>
+    <div id="content" style="text-align:center;margin-top:150px;align-items:center;">
+        <p style="font-size:1.5em;">Error 404</p>
+        <h1 class="supertext" style="font-size:4em;">Page not found</h1>
+        <br/>
+        <p style="font-size:1.5em;">Sorry, the page you're looking for could not be found.</p>
+        <br>
+        <a href="/" class="button">Back to home</a>
+        <p id="url" style="margin-top:17%;"></p>
+    </div>
+    <script>
+        let element = document.getElementById("url");
+        element.innerHTML = window.location.href
+    </script>
+</body>
+</html>

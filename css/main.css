@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    background-color: #23272a;
+    color: white;
+}
+
+#content {
+    margin: 70px 150px;
+    height: 100%;
+}
+
+#navbar {
+    z-index: 1;
+    list-style-type: none;
+    position: fixed;
+    width: 100%;
+    margin: 0;
+    padding-left: 50px;
+    top: 0px;
+    background: linear-gradient(135deg, #0091ff, #00ffbb);
+    overflow: hidden;
+    align-items: center;
+    font-weight: 500;
+}
+
+.navbreak {
+    float: left;
+    height: 1px;
+}
+
+.navlink {
+    float: left;
+}
+
+.navlink a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 20px;
+    text-align: center;
+    background-color: transparent;
+    padding: 20px;
+    transition: all 0.2s;
+}
+
+.navlink .selected {
+    font-weight: 600;
+}
+
+#search {
+    float: left;
+    width: 10%;
+    height: 36px;
+    border: 0;
+    border-radius: 40px;
+    align-items: center;
+    transition: all 0.2s;
+    box-shadow: none;
+    margin-top: 10px;
+    background-color: #090a11;
+    color: #7f8497;
+    cursor: pointer;
+}
+
+#search span {
+    font-size: 1rem;
+    padding: 0 12px 0 20px;
+    float: left;
+    text-transform: capitalize;
+}
+
+#search:hover {
+    box-shadow: white 0px 0px 0px 2px;
+    background-color: rgb(6, 7, 12);
+    color: rgb(200, 200, 200);
+}
+
+#search-popup {
+    position: relative;
+    display: inline-block;
+}
+
+#search-popup {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+}
+
+.show {
+    visibility: visible;
+    animation: fadeIn 1s;
+}
+
+#search-popup::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.navlink a:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.supertext {
+    background: linear-gradient(135deg, #0091ff, #00ffbb);
+    color: transparent;
+    background-clip: text;
+    display: inline;
+}
+
+.button {
+    background-color: rgba(31, 254, 224, 0.1);
+    scale: 1;
+    transition: all 0.2s;
+    border: 1px solid rgb(31, 254, 224);
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.button:hover {
+    background-color: rgba(31, 254, 224, 0.3);
+    scale: 1.1;
+}

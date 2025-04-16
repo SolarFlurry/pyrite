@@ -1,0 +1,21 @@
+#content {
+    display: grid;
+    grid-template-areas: "about logo";
+    grid-template-columns: 40% 55%;
+    grid-column-gap: 5%;
+}
+
+#about {
+    margin-top: 50px;
+    display: grid;
+    grid-area: "about";
+}
+
+#logo {
+    display: grid;
+    grid-area: "logo";
+}
+
+p {
+    font-size: 1.2em;
+}
