@@ -9,6 +9,8 @@ After your Behavior Pack is complete and you have applied it to your world, move
 
 > Note: You can use the `/reload` command to reload your function files.
 
+## The Basics
+
 The first thing to understand about Pyrite is the `select` function. The select function selects an entity for resulting commands. The following code utilises `select`.
 ```
 select(@a).say("Hello World!")
@@ -53,3 +55,7 @@ select({
 // make them say "I'm upside-down!"
 .say("I'm upside-down!")
 ```
+
+## Understanding
+
+Now you want to understand the commands system in Pyrite. In Pyrite, the term 'command' refers to what you would call functions in JavaScript or C++. Commands need an entity to run on, and uses the `.` operator. In the previous examples, the format `entity.say()` was used.
