@@ -10,7 +10,9 @@ After your Behavior Pack is complete and you have applied it to your world, move
 > Note: You can use the `/reload` command to reload your function files.
 
 The first thing to understand about Pyrite is the `select` function. The select function selects an entity for resulting commands. The following code utilises `select`.
-```select(@a).say("Hello World!")```
+```
+select(@a).say("Hello World!")
+```
 The code above reference all players (`@a`) and runs the `say` function.
 
 The `select` function can take 2 different kinds of arguments. In the example above, it received a selector argument. Pyrite selectors are the regular Bedrock selectors:
